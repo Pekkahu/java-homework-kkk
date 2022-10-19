@@ -1,0 +1,371 @@
+# Make a program that takes the radius of a circle as input, 
+#calculates its radius and area and prints it as output to the user.
+
+```
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("what is the radius of circle?");
+    Double radius = sc.nextDouble();
+    Double b = 3.14;
+    Double c = b*(radius*radius);
+    System.out.print("area of the circle is: ");
+    System.out.print(c);
+  }
+}
+```
+
+# Make a program that prints the table of a number that is input by the user.
+
+```
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int g = sc.nextInt();
+    System.out.println("your table is:");
+    System.out.println(g*1);
+    System.out.println(g*2);
+    System.out.println(g*3);
+    System.out.println(g*4);
+    System.out.println(g*5);
+    System.out.println(g*6);
+    System.out.println(g*7);
+    System.out.println(g*8);
+    System.out.println(g*9);
+    System.out.println(g*10);
+  }
+}
+```
+
+# check if adult or not adult
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int age = f.nextInt();
+        if (age > 18) {
+            System.out.println("your an adult");
+        }
+        else {
+            System.out.print("your not an adult");
+        }
+    }
+}
+```
+
+# check if the given number by user is odd or even
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int number = f.nextInt();
+        if  (number % 2 == 0){
+            System.out.println("even");
+        }
+        else {
+            System.out.print("odd");
+        }
+    }
+}
+```
+
+# check if the given number is equal or not 
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int a = f.nextInt();
+        int b = f.nextInt();
+        String c = String.format("no %o is greater then %o", a, b);
+        String d = String.format("no %o is smaller then %o", a, b);
+        if (a == b) {
+            System.out.println("yes they are equal");
+        } if (a > b) {
+            System.out.print(c);
+        } else {
+            System.out.println(d);
+        }
+    }
+}
+```
+
+# calcultaor
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        System.out.println("give two numbers");
+        float a = f.nextFloat();
+        float b = f.nextFloat();
+        System.out.println("select the operation you want");
+        System.out.println("A for addition");
+        System.out.println("B for subtraction");
+        System.out.println("C for muiltplication");
+        System.out.println("D for division");
+        System.out.println("E for remainder");
+        String c = f.next();
+        switch (c) {
+            case "A" :
+                System.out.println(a + b);
+                break;
+            case "B" :
+                System.out.println(a - b);
+                break;
+            case "C" :
+                System.out.println(a * b);
+                break;
+            case "D" : if(b == 0) {
+                       System.out.println("Invalid Division");
+                   } else {
+                       System.out.println(a/b);
+                   }
+	    break;
+           case "E" : if(b == 0) {
+                       System.out.println("Invalid Division");
+                   } else {
+                       System.out.println(a%b);
+                   }
+	   break;
+        }
+    }
+```
+
+> (if denomentor get zero the result will be undefined for calculator)
+
+
+# Ask the user to enter the number of the month & print the name of the month. 
+> For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int num = f.nextInt();
+        switch (num) {
+            case 1 :
+                System.out.println("january");
+                break;
+            case 2 :
+                System.out.println("february");
+                break;
+            case 3 :
+                System.out.println("march");
+                break;
+            case 4 :
+                System.out.println("aprill");
+                break;
+            case 5 :
+                System.out.println("may");
+                break;
+            case 6 :
+                System.out.println("june");
+                break;
+            case 7 :
+                System.out.println("jully");
+                break;
+            case 8 :
+                System.out.println("augest");
+                break;
+            case 9 :
+                System.out.println("septamber");
+                break;
+            case 10 :
+                System.out.println("october");
+                break;
+            case 11 :
+                System.out.println("november");
+                break;
+            case 12 :
+                System.out.println("december");
+                break;
+        }
+    }
+}
+```
+
+# for loop genrating 0 to 10 number
+
+```
+public class Main {
+    public static void main(String[] args) {
+        for (int c = 0; c < 11; c = c + 1){
+            System.out.println(c);
+        }
+    }
+}
+```
+
+# print sum of n natural number
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int n = f.nextInt();
+        int a = 0;
+        for (int i = 1; i <= n ;i ++) {
+            a = a + i;
+            System.out.println(a);
+        }
+        System.out.println(a);
+    }
+}
+```
+
+# Make a program that prints the table of a number that is input by the user.
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int n = f.nextInt();
+        for (int i = 1; i<11; i++) {
+        System.out.println(n * i);
+        }
+    }
+}
+```
+
+# Print all even numbers till n.
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int n = 2;
+        int g = f.nextInt();
+        for (int i = 1; i <=g; i++) {
+            System.out.print(n*i);
+        }
+    }
+}
+```
+
+# infinite loop example when there is no initialized object or condition or update
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        for(; ;) {
+            System.out.println("bitch");
+        }
+    }
+}
+```
+# Make a menu driven program. The user can enter 2 numbers, either 1 or 0. <br>If the user enters 1 then keep taking input from the user for a student’s marks(out of 100). <br>If they enter 0 then stop. <br>If he/ she scores : <br>Marks >=90 -> print “This is Good” <br>89 >= Marks >= 60 -> print “This is also Good” <br>59 >= Marks >= 0 -> print “This is Good as well”
+
+>(Hint : use do-while loop but think & understand why)
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        for( ; ; ) {
+            int n = f.nextInt();
+            if (n == 1) {
+                int g = f.nextInt();
+                if (g>=90) {
+                    System.out.println("This is Good");
+                } else if (g >= 60) {
+                    if (g <= 89){
+                        System.out.println("This is also Good");
+                    }
+                } else {
+                    System.out.println("This is Good as well");
+                }
+            } else if (n == 0) {
+                System.out.println("bye");
+                break;
+            } else {
+                System.out.println("please enter valid number");
+            }
+        }
+    }
+}
+```
+# Print if a number is prime or not (Input n from the user). #
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int h = f.nextInt();
+        int j = h % 2;
+        if (j == 0) {
+            System.out.println("yes it is a prime number");
+        }else {
+            System.out.println("no it is not a prime number");
+        }
+    }
+}
+```
+
+# printing pattern #
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner q = new Scanner(System.in);
+        int raws = q.nextInt();
+        int columns = q.nextInt();
+        for (int y = 1; y <= raws; y++) {
+            if ( y == 1) {
+                for (int j = 1 ; j <= columns; j++) {
+                    System.out.print("*");
+                };
+                System.out.println();
+            } else if (y < raws) {
+                for (int z = 1 ; z <= columns; z++) {
+                    if ( z == 1) {
+                        System.out.print("*");
+                    } else if (z < columns) {
+                        System.out.print(" ");
+                    } else {
+                        System.out.print("*");
+                    }
+                };
+                System.out.println();
+            }else {
+                for (int a = 1 ; a <= columns; a++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+```
+
+# output
+
+```
+"C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=59023:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\untitled\out\production\untitled Main
+6
+12
+************
+*          *
+*          *
+*          *
+*          *
+************
+
+Process finished with exit code 0
+
+```
