@@ -225,6 +225,7 @@ public class Main {
 }
 ```
 
+
 # Make a program that prints the table of a number that is input by the user.
 
 ```
@@ -368,4 +369,74 @@ public class Main {
 
 Process finished with exit code 0
 
+```
+# printing patern
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner q = new Scanner(System.in);
+        int raws = q.nextInt();
+        int columns = q.nextInt();
+        for ( int i = 1 ; i <= raws ; i++ ) {
+            for (int j = 1 ; j < ( i + 1 ) ; j++ ) {
+                System.out.print("*");
+            };
+            System.out.println();
+        }
+    }
+}
+```
+
+# output 
+
+```
+"C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=62796:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\untitled\out\production\untitled Main
+4
+5
+*
+**
+***
+****
+
+Process finished with exit code 0
+```
+
+# pattern problem
+
+```
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner f = new Scanner(System.in);
+        int raws = f.nextInt();
+        int columns = f.nextInt();
+        for (int i = 0 ; i < raws ; i++ ) {
+            for ( int j = 1 ; j <= columns ; j++) {
+                if ( j == columns || j == (columns - i ) ) {
+                    System.out.print("*");
+                } else if ( j < columns && j > (columns - i)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            };
+        System.out.println();
+        }
+    }
+}
+```
+# output
+
+```
+"C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=58367:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\untitled\out\production\untitled Main
+4
+5
+    *
+   **
+  ***
+ ****
+
+Process finished with exit code 0
 ```
