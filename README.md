@@ -492,3 +492,15 @@ public class Main {
     }
 }
 ```
+# output
+```
+"C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=63371:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\untitled\out\production\untitled Main
+5
+    *****
+   ***** 
+  *****  
+ *****   
+*****    
+
+Process finished with exit code 0
+```
