@@ -440,3 +440,35 @@ public class Main {
 
 Process finished with exit code 0
 ```
+# pattern
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner q = new Scanner(System.in);
+        int k = q. nextInt();
+        for ( int i = 1 ; i <= k ; i++) {
+            for (int j = 1 ; j <= i; j++) {
+                if ( i % 2 != 0 && j % 2 != 0 || i % 2 == 0 && j % 2 == 0) {
+                    System.out.print(1);
+                } else {
+                    System.out.print(0);
+                };
+            }
+        System.out.println();
+        }
+    }
+}
+```
+# output 
+```
+"C:\Users\Admin\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=62974:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\untitled\out\production\untitled Main
+5
+1
+01
+101
+0101
+10101
+
+Process finished with exit code 0
+```
