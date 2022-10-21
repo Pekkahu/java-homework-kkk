@@ -19,7 +19,7 @@ class Main {
 
 # Make a program that prints the table of a number that is input by the user.
 
-```
+```java
 import java.util.*;
 class Main {
   public static void main(String[] args) {
@@ -42,7 +42,7 @@ class Main {
 
 # check if adult or not adult
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -60,7 +60,7 @@ public class Main {
 
 # check if the given number by user is odd or even
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ public class Main {
 
 # check if the given number is equal or not 
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -100,7 +100,7 @@ public class Main {
 
 # calcultaor
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -147,7 +147,7 @@ public class Main {
 # Ask the user to enter the number of the month & print the name of the month. 
 > For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -197,7 +197,7 @@ public class Main {
 
 # for loop genrating 0 to 10 number
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         for (int c = 0; c < 11; c = c + 1){
@@ -209,7 +209,7 @@ public class Main {
 
 # print sum of n natural number
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -228,7 +228,7 @@ public class Main {
 
 # Make a program that prints the table of a number that is input by the user.
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -243,7 +243,7 @@ public class Main {
 
 # Print all even numbers till n.
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -259,7 +259,7 @@ public class Main {
 
 # infinite loop example when there is no initialized object or condition or update
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -273,7 +273,7 @@ public class Main {
 
 >(Hint : use do-while loop but think & understand why)
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -302,7 +302,7 @@ public class Main {
 }
 ```
 # Print if a number is prime or not (Input n from the user). #
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -319,7 +319,7 @@ public class Main {
 ```
 
 # printing pattern #
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -372,7 +372,7 @@ Process finished with exit code 0
 ```
 # printing patern
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -405,7 +405,7 @@ Process finished with exit code 0
 
 # pattern problem
 
-```
+```java
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
