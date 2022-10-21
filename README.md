@@ -472,3 +472,23 @@ public class Main {
 
 Process finished with exit code 0
 ```
+# Print a solid rhombus
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner q = new Scanner(System.in);
+        int k = q. nextInt();
+        for ( int i = 0 ; i < k ; i++) {
+            for ( int j =1 ; j < 2*k; j++) {
+                if ( j >= ((2*k)- 5 -i) && j<= ((2*k) - 1 -i)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            };
+        System.out.println();
+        }
+    }
+}
+```
