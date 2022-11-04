@@ -504,3 +504,58 @@ public class Main {
 
 Process finished with exit code 0
 ```
+### roots of polynomail 2 degree 
+```java
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double radical_value = ((b*b)-4*a*c);
+        if (radical_value >= 0) {
+            double squareing_radical_value = Math.pow(radical_value, 0.5);
+            double root_1 = (((-b) + (squareing_radical_value))/(2*a));
+            double root_2 = (((-b) - (squareing_radical_value))/(2*a));
+            if (b < 0) {
+                if (c < 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² "+b+"x "+c+"  are "+root_1+" and "+root_2);
+                } else if (c > 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² "+b+"x +"+c+"  are "+root_1+" and "+root_2);
+                }
+            } else if (b > 0) {
+                if (c < 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² +"+b+"x "+c+"  are "+root_1+" and "+root_2);
+                }
+            }
+            if (b > 0) {
+                if (c > 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² + "+b+"x + "+c+"  are "+root_1+" and "+root_2);
+                }
+            }
+        } else if (radical_value < 0){
+            double b1= b*-1;
+            String g = b1+" + √"+ radical_value ;
+            String h = b1+" - √"+ radical_value ;
+            if (b < 0) {
+                if (c < 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² "+b+"x "+c+"  are ("+g+")/(2*"+a +") and ("+h+")/(2*"+a+")");
+
+                } else if (c > 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² "+b+"x +"+c+"  are ("+g+")/(2*"+a+") and ("+h+")/(2*"+a+")");
+                }
+            } else if (b > 0) {
+                if (c < 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² +"+b+"x "+c+"  are ("+g+")/(2*"+a+") and ("+h+")/(2*"+a+")");
+                }
+            } if (b > 0) {
+                if (c > 0) {
+                    System.out.println("The roots of the polynomail "+a+"x² + "+b+"x + "+c+"  are ("+g+")/(2*"+a+") and ("+h+")/(2*"+a+")");
+                }
+            }
+        }
+    }
+}
+```
