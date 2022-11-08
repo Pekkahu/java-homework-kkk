@@ -559,3 +559,91 @@ class Main {
     }
 }
 ```
+### usefull way to abuse for loops for any pattern just use these code rather then if else statement.
+> increaseing triangle
+```java
+public class Main{
+   public static void main (String args[]){
+      int n = 5;
+      for (int i = 1; i<=n ; i++) 
+      {
+         for (int j = 1; j<=i; j++) {
+            System.out.print("* ");
+         }
+         System.out.println();
+      }
+   }
+}
+```
+> decreasing triangle 
+```java
+public class main {
+   public static void main (String args[]) {
+      int n = 5;
+      for (int i = 1; i<=n ; i++) {
+         for (int j = i; j<=n; j++) {
+            System.out.print(“* ”);
+         }
+         System.out.println();
+     }
+  }
+}
+```
+> increasing triangle spaces 
+```java
+public class Main {
+     public static void main(String args[]) {
+          int n = 8;
+	  for (int i = 1; i<=n ; i++) {
+             for (int j = i; j<=n; j++) {
+             System.out.print(" ");
+          }
+          System.out.print("* ");
+          System.out.println();
+       }
+    }
+ }
+```
+> decreasing triangle spaces
+```java
+public class main {
+     public static void main(String args[]) {
+          int n= 5;
+          for (int i = 1; i<=n ; i++) {
+             for (int j = 1; j<=i; j++) {
+               System.out.print(“ ”);
+             }
+             System.out.print(“* ”);
+             System.out.println();
+           }
+        }
+  }
+```
+>using it to form a pyraimid
+```java
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+       System.out.print("Enter Number of Rows : ");
+       int n = scan.nextInt();
+
+       for (int i = 1; i<=n ; i++) { 
+          for (int j = i; j<=n; j++) {
+             System.out.print(" ");
+          }
+          for (int j = 1; j< i; j++) { 
+             System.out.print("* ");
+          }
+          for (int j = 1; j<=i; j++) {
+             System.out.print("* ");
+          }
+          System.out.println();
+       }
+
+     }
+ }
+```
+![Screenshot (79)](https://user-images.githubusercontent.com/96633728/200658854-d575e703-28a3-48a3-95bc-fb528a47e53a.png)
+>these technic doesn't require if else statment and the battern can be formed 
+
