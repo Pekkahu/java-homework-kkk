@@ -691,3 +691,40 @@ public class StarPattern4
     }
 }
 ```
+### There are three type of variables in java. Local, Global(Instance) and static(both Local and Global)
+### 1.Local variable 
+> A variable that is declared inside the body of the method or constructor is called a local variable. It is called so because the extent of a local variable lies only within the method or constructor within which it is created and other methods in the class cannot access it. inside the method body, local variable is declared using the static keyword.
+
+### Example: 
+```java
+public class Main {
+    public static void main(String[] args) {
+    	int number = 1; /** these is a local variable for main function only it can not be used out side these method. */
+        System.out.print(number);
+    }
+}
+```
+### 2.Global(Instance) variable 
+> An instance variable is declared inside the class but outside a method or a constructor. It is similar to a static variable except that it is declared without using the keyword static. These variables are accessible by all methods or constructors that are inside the class.
+
+### Example:
+```java
+public class Main {
+    int number = 1; /** these is a Global(Instance) variable it can be used by any method from these class but we have to creat a innstance of the object inside the method to use these variable. */ 
+    public static void main(String[] args) {
+    	Main b = new Main(); /** these is a Instance of the class */
+        System.out.print(b.number);
+    }
+}
+```
+### 3. Static(both Local and Global) varaible
+> An static variable is declared inside the class but outside a method or a constructor. It is similar to a instance variable except that it is declared using the keyword static. These variables are accessible by all methods or constructors that are inside the class.
+### Example:
+```java
+public class Main {
+    static int number = 1;
+    public static void main(String[] args) {
+        System.out.print(number);
+    }
+}
+```
