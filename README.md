@@ -728,4 +728,17 @@ public class Main {
     }
 }
 ```
-### In a program,input 3  numbers:A,B andC.You have to output the average of these 3 numbers.
+### In a program , input 3 numbers:A,B andC.You have to output the average of these 3 numbers.
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+        System.out.print(((a + b + c)/3));
+    }
+}
+
+```
