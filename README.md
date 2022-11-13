@@ -728,3 +728,4 @@ public class Main {
     }
 }
 ```
+### In a program,input 3  numbers:A,B andC.You have to output the average of these 3 numbers.
