@@ -742,3 +742,14 @@ public class Main {
 }
 
 ```
+### In a program , input the side of a square.You have to out put the area of the square.(Hint : area of a square is (side x side))
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int side = s.nextInt();
+        System.out.print("area of square of side length "+side+" is equal to "+side*side);
+    }
+}
+```
