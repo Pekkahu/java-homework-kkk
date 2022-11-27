@@ -327,23 +327,32 @@ public class Main {
         int raws = q.nextInt();
         int columns = q.nextInt();
         for (int y = 1; y <= raws; y++) {
+	// these decide number of raws 
             if ( y == 1) {
                 for (int j = 1 ; j <= columns; j++) {
+	// these decide number of column
                     System.out.print("*");
                 };
                 System.out.println();
+	// first raw 
             } else if (y < raws) {
+	// raws other then 1 
                 for (int z = 1 ; z <= columns; z++) {
+	// these decide number of column
                     if ( z == 1) {
+	// first colomn
                         System.out.print("*");
                     } else if (z < columns) {
+	// all other element are conisdered only first colomn and last colomn are excluded
                         System.out.print(" ");
                     } else {
+	// last colomn
                         System.out.print("*");
                     }
                 };
                 System.out.println();
             }else {
+	// last raw
                 for (int a = 1 ; a <= columns; a++) {
                     System.out.print("*");
                 }
